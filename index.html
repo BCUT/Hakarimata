@@ -3,64 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Launching Soon</title>
+    <title>Haakarimata Restoration Trust</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background: url('DSC_0242.jpeg') no-repeat center center/cover;
-            height: 100vh;
-            color: white;
+            font-family: 'Playfair Display', serif;
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
             text-align: center;
+            background-image: url('your-background-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #000000;
+            height: 100vh;
         }
-        .container {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 40px;
-            border-radius: 10px;
+
+        .top-header {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #000000;
         }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: auto;
         }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+
+        .main-text {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+            color: #000000;
         }
-        input[type="email"] {
-            padding: 10px;
-            width: 80%;
+
+        .underline {
+            width: 60%;
             max-width: 300px;
-            border: none;
-            border-radius: 5px;
+            height: 2px;
+            background-color: #000000;
+            margin: 10px 0;
         }
-        button {
-            padding: 10px 20px;
+
+        .sub-text {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #000000;
+        }
+
+        .subscribe-box {
+            margin-bottom: 50px;
+        }
+
+        .subscribe-box input[type="email"] {
+            padding: 10px;
+            font-size: 1rem;
             border: none;
-            border-radius: 5px;
-            background-color: #28a745;
-            color: white;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .subscribe-box button {
+            padding: 10px 15px;
+            font-size: 1rem;
+            background-color: #ffffff;
+            color: #333;
+            border: none;
+            border-radius: 4px;
             cursor: pointer;
         }
-        footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.9rem;
+
+        .subscribe-box button:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>We're Launching Soon</h1>
-        <p>Subscribe to get notified when we go live!</p>
-        <form>
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Notify Me</button>
+
+    <div class="top-header">Haakarimata Restoration Trust</div>
+
+    <div class="center-content">
+        <div class="main-text">whakahokia mai te tangi manu</div>
+        <div class="underline"></div>
+        <div class="sub-text">bring back the birdsong</div>
+    </div>
+
+    <div class="subscribe-box">
+        <form action="https://formspree.io/f/mrbegren" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
         </form>
     </div>
-    <footer>&copy; 2025 Hakarimata | All Rights Reserved</footer>
+
 </body>
 </html>
